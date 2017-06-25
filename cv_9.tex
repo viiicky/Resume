@@ -1,0 +1,334 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND PERSONAL DATA
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Vikas \textsc{Prasad}}\par} % Your name
+%\par{\centering{\textsc{DOB:} \textsc{18 FEBRUARY 1993}}\bigskip\par}
+
+%\section{Personal Data}
+
+\begin{tabular}{lr}
+%once hackerrank profile becomes somewhat presentable move DOB along with HR profile in this section
+\href{mailto:vikasprasad.prasad@gmail.com}{vikasprasad.prasad@gmail.com} & \# 40, 9\textsuperscript{th} Cross \\
+91-7566564744 & Celebrity Paradise Layout \\
+\href{https://github.com/viiicky}{https://github.com/viiicky} & Doddathogur, Electronic City \\
+\href{http://stackoverflow.com/users/1781024/vikas-prasad}{http://stackoverflow.com/users/1781024/vikas-prasad} & Bengaluru-560100 \\
+\href{https://www.codecademy.com/webBlaster13440}{https://www.codecademy.com/webBlaster13440} & \textsc{DOB:} \textsc{18 February 1993}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{tabular}{l|p{11cm}}
+\textsc{Nov 2016-}\emph{Current} & \textbf{Connected Car Platform (CCP)} \\
+Infosys Limited & \footnotesize{Developed \textbf{Notification} and \textbf{Vehicle Locator} service from scratch. Worked on}\\ 
+Bengaluru & \footnotesize{\textbf{Spring Boot}, \textbf{Spring Data}, \textbf{Java}, JUnit, \textbf{Maven}, \textbf{git}, \textbf{mongoDB}. Got introduced to Java: Instant, Lambda, Supplier, Optional, reflections, Design Patterns: Factory, State, Singleton, Builder, Jackson, Batch Processing, \textbf{Spring Scheduler}, \textbf{Spring State Machine}, \textbf{Spring JMS Listener}, Azure Service Bus, Qpid, \textsc{sonar}Q\textsc{ube}, \textbf{twilio}, \textbf{SendGrid}, amazon web services: \textbf{Amazon SES}, \textbf{Amazon SNS}, \textbf{RequestBin}, \textbf{ngrok}, JFrog, Jenkins, VSTS,  kibana. Got introduced to processes like: Agile, TDD, Pair Programming}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Sept 2016-Oct 2016} & \textbf{Digital Oil Field (DOF) Phase 2}\emph{}\\
+Infosys Limited & \footnotesize{Worked on UI of a POC for allowing the users to manage Oil Fields digitally under}\\
+Bengaluru & \footnotesize{the \textbf{Internet of Things} \textbf{R\&D} team. Added functionality for saving custom plots. Added views for separators along with various other fixes. Improved \textbf{AngularJS}, \textbf{Bootstrap} \& \textbf{Node.js} knowledge. Got introduced to D3, NVD3, \textbf{MSSQL} \& Leaflet.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jul 2016} & \textbf{Telstra Mock Project} \emph{}\\
+Infosys Limited & \footnotesize{Mock project to develop telecommunication user/admin functionalities. Wrote}\\
+Bengaluru & \footnotesize{backend to expose \textbf{REST}ful APIs using Java, Spring Boot, \textbf{H2} DB, \textbf{Spring Data JPA}, Apache PDFBox. Developed frontend using AngularJS, Bootstrap, \textbf{UI Bootstrap}, Google Charts. Learnt about \textbf{Spring}, AngularJS, RESTful services, Bootstrap \& \textbf{JavaScript}.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Apr 2016} & \textbf{JRail}, \emph{Stream Training Project} \emph{}\\
+Infosys Limited & \footnotesize{Finished training with \textbf{A} grade. JRail is a railway application with various}\\
+Mysuru & \footnotesize{functionalities. Added new features. Learnt Java, \textbf{Hibernate}, \textbf{JUnit}, JSF, \textbf{Oracle DB}. Got introduced to \textbf{Multitier architecture}, Servlet, JSP, JSTL \& Ant Build tool.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Feb 2016} & \textbf{PyPedia}, \emph{Generic Training Project} \emph{}\\
+Infosys Limited & \footnotesize{Completed training with \textbf{A} grade and finished the project PyPedia. In PyPedia, user}\\
+Mysuru & \footnotesize{could create, edit, search \& read about various topics. Could also invite other users. Improved \textbf{Python} knowledge \& got introduced to Oracle Database.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Apr 2015-May 2015} & \textbf{Textbook Companion Programme} \emph{}\\
+IIT Bombay & \footnotesize{Sams Teach Yourself Data Structures \& Algorithms Analysis in 24 Hours}\\
+Internet & \footnotesize{\textbf{FOSSEE (Free and Open Source Software for Education)}}\\
+& \footnotesize{\href{http://tbc-python.fossee.in/book-details/502/}{http://tbc-python.fossee.in/book-details/502/} Contributed in creating a repository of reference material. Received \textbf{honorarium}. Strengthened Python, \textbf{Object Oriented} and \textbf{Data Structures} \& \textbf{Algorithms Analysis} skills.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jun 2014-Jul 2014} & \textbf{Airline Reservation System} website \emph{}\\
+hp Education Services & \footnotesize{Completed training in \textbf{PHP} with grade \textbf{A+}. Managed the team and gained \textbf{team skills}.}\\
+Noida & \footnotesize{Developed the backend of the system and broadened database system knowledge.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Feb 2014-Jun 2014} & \textbf{OH! HELL}, \emph{Minor Project} \emph{}\\
+ITM & \footnotesize{Windows 8 \textsc{store}- card based game, known as ‘Lakdi’ in India. Conceptualized the}\\
+Gwalior & \footnotesize{game, designed algos, maintained backend \& acquired \textbf{MySQL} \& \textsc{json} knowledge.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{May 2012} & \textbf{BRICKS} \emph{}\\
+Gwalior & \footnotesize{A graphics game in \textbf{C} language. Enhanced the concepts of C language.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{ll}	
+2015 & \textbf{Bachelor of Engineering in Computer Science \& Engineering}\\
+Institute of Technology And & Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal\\
+Management (ITM), Gwalior &\normalsize \textsc{CGPA}: \textbf{7.63}/10.00 | \small\emph{First Division with} \textbf{Honours}\\
+&\\
+
+%------------------------------------------------
+
+2011 & \textbf{Higher Secondary School with Physics, Chemistry \& Maths} \\
+K.G. Children Hr. Sec. School & Board of Secondary Education, Madhya Pradesh\\
+Gwalior & Passed in \textbf{1\textsuperscript{st}} Division with \textbf{84.6}\% | \textbf{Dist.} \small\emph{in all subjects except one}\\
+& Selected for Central Sector \textbf{Scholarship}\\
+&\\
+
+%------------------------------------------------
+
+2009 & \textbf{High School}\\
+K.G. Children Hr. Sec. School & Board of Secondary Education, Madhya Pradesh\\
+Gwalior & Passed in \textbf{1\textsuperscript{st}} Division with \textbf{88}\% | \textbf{Distinction} \small\emph{in all subjects}\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%
+%\begin{tabular}{rl}
+%\textsc{English:} & Fluent\\
+%
+%\textsc{Italian:} & Mothertongue\\
+%
+%\textsc{French:} & Basic Knowledge\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Languages: & Java, python, JavaScript, C, C++, php\\
+
+Version Control System: & git\\
+
+Database Management System: & mongo\textsc{db}, Oracle Database, \textsc{m}y\textsc{sql}, \textsc{MSSQL}, \textsc{H}2
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	POSITION OF RESPONSIBILITIES
+%----------------------------------------------------------------------------------------
+
+\section{Participation and Awards}
+
+\begin{tabular}{ll}
+\textsc{Sept} 2014 & \emph{Startup for Beginners organized by Weekend Ventures} | \textbf{Team Leader}\\
+& Headed the team | Pitched a Startup Idea | Bagged the \textbf{1\textsuperscript{st}} prize\\
+& Adapted \textbf{leadership skills} | Upgraded \textbf{public speaking} experience\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Mar} 2013 & \emph{Code Combat}, a coding competition\\
+& Cleared Level 2 in the college annual function- KRONOS 13\\
+&\\
+
+%------------------------------------------------
+
+\textsc{------------------} & \emph{HelpAge India} | \textbf{Raised fund} for the HelpAge India event that works\\
+& nationwide for the cause \& care of the elderly | Made special efforts\\
+& Presented with cricketers' autographs, badge and a \textbf{silver} medal
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\begin{tabular}{ll}
+\textsc{Mar 2014-Apr 2014} & Advance Soft Skills Training\\
+hp India Sales Pvt. Ltd. & \textbf{Gave a team presentation on McDonald's Corporation}\\
+ITM & Championed the presentation in the batch\\
+Gwalior & Awarded with the \textbf{Presentation Skills Award}\\
+& Earned Certificate of Achievement\\
+&\\
+
+%------------------------------------------------
+\textsc{Sept} 2013 & Festoon....'13\\
+ITM & \textbf{Extempore} event | Spoke on Dr. Kiran Bedi | Secured \textbf{3\textsuperscript{rd}} position\\
+Gwalior & Learnt public speaking basics\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Mar} 2013 & Business English Certificate Preliminary\\
+ITM & Passed with \textbf{77}\% with exceptional \textbf{listening} and \textbf{reading} profile\\
+Gwalior & Earned Cambridge ESOL Entry Level Certificate\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Dec} 2008, \textsc{Dec} 2007 & Essay Competition\\
+K.G. Children Hr. Sec. School & Wrote essay on \textbf{Global Warming} \& \textbf{Pollution}\\
+Gwalior & Secured \textbf{1\textsuperscript{st}} position both the times\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+Fitness freak, Amateur Cook. Likes to play skill requiring mind games.\\
+Quick learner. Very much interested in acquiring knowledge.\\
+Always interested to learn new skills. Special inclination for arts.\\
+Likes to read variety of topics. Likes to listen to music of all kinds.\\
+Likes science, technology \& inventions.\\
+Likes to meddle with computers and electronic gadgets.\\
+Affinity to astronomy. Loves travelling and exploring new places.\\
+Supports humanitarian \& developmental activities.
+
+\section{Outside Office Work}
+Like to read about Data Science in free time:\\
+\href{https://docs.google.com/spreadsheets/d/119tlJCNgTcg1RGLWL1T5nZH0Lj7HAtEktJBymnpFkQA/edit?usp=sharing}{Intro-to-Descriptive-Statistics-Udacity-Final-Project}\\
+\href{https://docs.google.com/spreadsheets/d/1fLTxtzmr2lL2DZbYCNN3SOrq32Kvs1yG5MDb5RsWkL0/edit?usp=sharing}{Intro-to-Inferential-Statistics-Udacity-Final-Project}
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%
+%%----------------------------------------------------------------------------------------
+%%	GRADE TABLES
+%%----------------------------------------------------------------------------------------
+%
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation) & 25 & 6\\
+%Financial Statement Analysis & 28 & 6\\
+%Statistics & 27 & 6\\
+%Theory of Finance & 26 & 6\\
+%Quantitative Methods for Finance & 30 & 6\\
+%Econometrics & 24 & 6\\
+%Derivatives & 31 & 6\\
+%Management of Financial and Insurance Companies & 30 & 6\\
+%Business Law & 31 & 6\\
+%Investment Banking	& 28 & 6\\ \\		
+%Behavioral Models for Economics and Finance	 & 29 & 6\\
+%Numerical Methods for Finance & 29 & 6\\
+%Advanced Derivatives & 30 & 6\\
+%Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%English Language & 30 &	4\\
+%French Language & 31 &	4\\	
+%Internship & & 8\\		
+%Final Thesis & & 20\\	
+%& Total & 120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{8.0}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+%
+%%------------------------------------------------
+%
+%\bigskip
+%
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%Corporate Financial Strategy & A & 4\\
+%Derivatives & A & 4\\
+%Money, Credit, and Banking & A & 4\\
+%Business Strategy & A- & 3.5\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{3.875}
+%\end{tabular}
+%\end{center}
+%
+%%----------------------------------------------------------------------------------------
+%
+\end{document}
