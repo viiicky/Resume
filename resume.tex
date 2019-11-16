@@ -1,0 +1,381 @@
+% Resume inspired from learnings from: a) Preet Mam from ITM communication skills training, b) Codechef Resume Meme, c) Kaggle Resume Youtube Video
+% ~TODO~ DONE: Make sure the resume respects above three's rules
+%
+% TODO ~DONE~: Add all commented items from resume to online portfolio?
+% TODO ~DONE~: Add all new items from resume to online portfolio?
+% TODO: Add NPTEL Certification Exam with score to online portfolio?
+% TODO: Update RHA, Helpage India work to online portfolio?
+% TODO: Update Hasura work to online portfolio?
+% TODO: Update IMAD and NPTEL work to online portfolio?
+% TODO: Upload KNONOS certificate, HPES, TBC, NPTEL, HASURA certificates to online portfolio?
+%
+% Last updated on: 13th Mov 2019 by Vikas Prasad
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemMinimal}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Vikas Prasad} & \href{mailto:vikasprasad.prasad@gmail.com}{vikasprasad.prasad@gmail.com}\\
+  \href{https://github.com/viiicky}{GitHub}; \href{http://stackoverflow.com/users/1781024/vikas-prasad}{Stack Overflow} & 91-7566564744 \\
+% - TODO: other links? Khan Academy? Udacity? Codecademy? Mail them to develop a feature where the profile link can be shared and then use that link here?
+% - Once hackerrank profile becomes somewhat presentable add that too
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Institute of Technology and Management (ITM)}{Gwalior, India}
+      {Bachelor of Engineering in Computer Science;  CGPA:  \textbf{7.63}/10.00}{2011 - 2015}
+      \resumeItemListStart
+        \resumeItemMinimal{1\textsuperscript{st} Division with  \textbf{Honours}}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {K.G. Children Higher Secondary School}{Gwalior, India}
+      {Physics, Chemistry \& Maths;   \textbf{84.6}\%}{2011}
+      \resumeItemListStart
+        \resumeItemMinimal{ \textbf{1}\textsuperscript{st} Division}
+        \resumeItemMinimal{ \textbf{Distinction} \textit{in all subjects except one}}
+        \resumeItemMinimal{Selected for Central Sector  \textbf{Scholarship}}
+      \resumeItemListEnd
+      
+% What is it: High School at K.G. Children Hr. Sec. School, Gwalior by Board of Secondary Education, Madhya Pradesh in 2009
+% What did I do: Passed in 1st Division with 88%. Distinction in all subjects
+% What tech we used: NA
+%------------------------------------------
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Line limit for each description in this section = 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Currently Fyle->MIS-Analytics, Fyle-Accounting-Exports and Fyle->Others are breaking this limit(allowing since the resume is not exceeding the max 1 page limit, might want to reduce in future).
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fyle}{Bengaluru, India}
+      {Member of Technical Staff}{Jan 2018 - Present}
+      \resumeItemListStart
+      
+        \resumeItem{Notifications \& Reminders}
+          {Led this module. Led AMP reply to comments feature, email service and delayed emails feature.}
+% (4 people team other than me, 2 dev, 1 designer, 1 dev intern)
+% TODO: add activity stream in above description once it sees the light
+
+        \resumeItem{MIS-Analytics}
+          {Led this module. Developed GD service from scratch. Created big fat \textbf{Postgres} materialised view(\textbf{180+} columns; \textbf{30+} joins) for mis and analytics purpose around expenses. Later, switched to custom refresh mechanism(on normalised tables) bringing refresh time down from \textbf{55 mins to 30 sec}; \textbf{100x+} improvement. Adapted the same solution for other core objects like reports, payments. Designed analytics support for various kinds of charts. Designed and led many other subsequent services/features/improvements. Used \textbf{Flask}, \textbf{Python}.}
+% TODO: add persistent filters in above description once it sees the light
+
+%---------detailed description-----------
+% Developed v1: GD service from scratch for MIS
+% Developed v2: Introduced custom incremental/full refresh mechanism bringing data refresh time from 55 minutes to 30 seconds i.e. 100x+ improvement
+% Designed v3: Analytics support
+% Led(either no design by me or just requirements by me) other similar services: mis-reports, mis-payments. Also subsequent new features like new charts, frequently used filters on Analytics page, full refresh overhaul using time based approach.
+% (2 people team other than me, both dev)
+% Designed and lead other various subsequent features: Attachments urls in company expenses export
+
+%---------gold-digger related facts----------
+% fact table for gold-digger: transactions
+% fat table: gold_digger_schema.transaction_collections
+% no. of transactions = 2171988
+% size of transactions table = 4665 MB
+% size of gold_digger_schema.transaction_collections = 8311 MB
+% number of columns in gold_digger_schema.transaction_collections = 183
+% number of joins for gold_digger_schema.transaction_collections table definition = 34
+% helpful blog to get the whole picture(we are not the author): https://engineering.fylehq.com/analytics-pipeline-using-incremental-refresh-at-fyle/
+% Common approach to analytics is to have a set of normalised tables and load data from core /fast-moving (source) tables to these separate views/table definitions (destination) -  optimised for running complex analytical queries
+
+      	\resumeItem{Jobs Infrastructure}
+          {\href{https://engineering.fylehq.com/engineering-guide-to-food-truck/}{\textbf{https://engineering.fylehq.com/engineering-guide-to-food-truck/}} End to end development of a background job processing framework. Used \textbf{APScheduler}, \textbf{RabbitMQ}, \textbf{Celery}.}
+% End to End means, not only development, but pre and post dev stuff also, like: business requirements, functional requirements, engineering design, dev+documentation+testing+demo+maintenance etc.
+% Learnt really a good loads of things from this project. Got many myths busted :)
+
+        \resumeItem{Accounting Exports}
+          {Extended existing service to support any new integration in a generic fashion. Added Netsuite, SunGL and GEFU integration using this generic support. Added support for \textbf{QBO} locations \& classes. Even worked on JavaScript. Constantly \textbf{maintained} and \textbf{supported} one top QBO using customer.}
+% developed the above thing
+% Also did: UI work here
+% constantly maintained and supported the UK client FAE
+
+        \resumeItem{Others}
+          {Apart from above, led and developed many other features/services. Also enforced \textbf{good practices} and \textbf{initiatives} like using editorconfig, BugsNPizza etc. Was also actively involved in engineering \textbf{hiring}(seen the company grow from 9 to 90 members in around 2 years), and briefly involved in handling \textbf{production deployments} and \textbf{customer success} on bugs front.}
+      \resumeItemListEnd
+% Other items:
+% - developed end to end Default Cost Center Support for both web app and mobile
+% - developed end to end Default Cost Center Support bulk edition;
+% - developed end to end Allowed per diem features
+% - developed  and documented Bulk invite API for Hero's Adrenaline software (temporary solution till TPA support was being created)
+% - wrote Hero specific MIS scripts
+% - developed Auto generate unique sequential payment numbers at org level
+% - developed JwtPrincipal support for include roles, scopes, added_by etc.
+% - led defaults-handler
+
+% What is Fyle: Intelligent Expense Management Software. a new standard for expense management that provides one click expense tracking for employees and unmatched control for enterprises.
+% Tech stack at Fyle: main service in Java with Dropwizard framework. Almost all others services in Python with Flask framework. Every now and then people keep trying different tech like Ruby, Django etc. etc.
+% Some other tech stack: jdbi, Postgres, rabbitMQ, Angular, ionic framework. Google Guice for dependency injection and Liquibase for migrations.
+% Joined as the 9th employee on 2018 New Year, and as of writing we have 90 employees - in a span of almost 2 years, and still hiring.
+
+    \resumeSubheading
+      {Infosys Limited}{Mysuru \& Bengaluru, India}
+      {Systems Engineer}{Dec 2015 - Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Connected Car Platform (CCP)}
+          {Developed \textbf{Notification} and \textbf{Vehicle Locator} services from scratch. Used \textbf{Spring}, \textbf{Java}, \textbf{mongoDB}, \textbf{twilio}, \textbf{SendGrid}, amazon web services: \textbf{Amazon SES}, \textbf{Amazon SNS}.}
+% What: Developed Notification and Vehicle Locator service from scratch. Worked on Spring Boot, Spring Data, Java, JUnit, Maven, git, mongoDB. Got introduced to mockito, REST-assured, Java 8 features: Instant, Lambda, Supplier, Optional, reflections, Design Patterns: Factory, State, Singleton, Builder, Jackson, Batch Processing, Spring Scheduler, Spring State Machine, Spring JMS Listener, Spring Integration, Azure Service Bus, Qpid, sonarQube, twilio, SendGrid, amazon web services: Amazon SES, Amazon SNS, RequestBin, ngrok, JFrog, Jenkins, VSTS, semaphoreci, kibana. Got introduced to processes like: Agile, TDD, Pair Programming
+
+        \resumeItem{Digital Oil Field (DOF) Phase 2}
+          {Worked on UI of a POC that allows users to manage Oil Fields digitally under
+the Internet of Things \textbf{R\&D} team. Added functionality for saving custom plots. Added separator views.}
+% What: UI App Full Stack Developer, Mssql, AngularJS, Node.js · DOF is an application which collects data through various sensors placed in oil field and then after filtering those data, provides interactive dashboard to the user where user can:
+% - monitor the activities of oil wells, various equipment like separators, pump etc.
+% - close alarms raised by any equipment.
+% - plot various graphs between different parameters to see the production details
+% -forecast productions, etc.
+%
+% Phase 1 of the application was already developed. Data was being taken from Pi Historian. Middleware was written in C# & MSSQL was used as the database. UI app was written using AngularJS JavaScript framework. And Node.js was used as the backend of the UI app. Worked on the UI app for Phase 2. Added functionality for saving custom plots. Added views for separators along with various other fixes. Improved AngularJS, Bootstrap & Node.js knowledge. Got introduced to D3, NVD3, MSSQL & Leaflet
+% Where: ICETS, Infosys, BLR
+
+       \resumeItem{Telstra Mock Project}
+          {Developed telecommunication website with user/admin functionalities and pdf bill reports support. Used Spring, Java, H2 database for \textbf{RESTful} APIs. AngularJS, Bootstrap, Google Charts for frontend.}
+% What did I do: Mock project to develop telecommunication user/admin functionalities. Wrote backend in Java using Spring Boot. Used H2 database. Used Spring Data JPA for data repositories. Exposed RESTful APIs for the frontend. Used Apache PDFBox for creating bill reports. Developed the frontend using AngularJS. Used Bootstrap for CSS part. Used UI Bootstrap, an angular directive for bootstrap components. Used Google Charts for graph creation. Learnt about Spring, AngularJS, RESTful services, Bootstrap and JavaScript.
+% When: July 2016
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Free and Open Source Software for Education (FOSSEE), IIT Bombay}{Internet}
+      {Intern}{April 2015 - May 2015}
+      \resumeItemListStart
+        \resumeItem{Textbook Companion Programme}
+          {\href{http://tbc-python.fossee.in/book-details/502/}{\textbf{http://tbc-python.fossee.in/book-details/502/}} Contributed in creating reference material for the book \textbf{Data Structures} \& \textbf{Algorithms Analysis}. Received honorarium.}
+      \resumeItemListEnd
+% What: Textbook Companion Programme by IIT Bombay on Internet
+% What did I do: Submitted Python code for all the solved examples of the book Sams Teach Yourself Data Structures & Algorithms Analysis in 24 Hours; FOSSEE (Free and Open Source Software for Education); Contributed in creating a repository of reference material. Received honorarium. Strengthened Python, Object Oriented and Data Structures Algorithms Analysis skills. Complete project on above link.
+% When: April 2015 - May 2015
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Line limit for each description in this section = 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Currently none breaks this limit.
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://platform.hasura.io/hub/projects/viaksprasad/zapier-backup}{\textbf{https://platform.hasura.io/hub/projects/viaksprasad/zapier-backup}}}
+      {Upload to Hasura with Drive backup.}
+% What: A project that allows user to upload any files to Hasura and backup the same file on Google Drive. Zapier backup is used to upload your files to Hausra server and trigger a backup for the same file on Google Drive. The drive link where all the backups get saved is: https://drive.google.com/open?id=1pYSTjW7pooVf3_kUXm_vj-cZVAVt9JSb More details in the above link.
+% When: Jan 2018 ? Mar 2018
+    
+% https://github.com/viiicky/imad-app
+% Some kid project by IMAD course that uses nodejs, after which we took the NPTEL certification. The project is too kid to include.
+% When: Aug 2017
+      
+    \resumeSubItem{\href{https://github.com/viiicky/Intro-to-Inferential-Statistics}{\textbf{https://github.com/viiicky/Intro-to-Inferential-Statistics}}}
+      {Detailed analysis on Haberman's Survival Data Set.}
+% What: Did a detailed analysis on the dataset containing cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer. More details in the link.
+% When: Jan 2017
+
+    \resumeSubItem{\href{https://github.com/viiicky/Intro-to-Descriptive-Statistics}{\textbf{https://github.com/viiicky/Intro-to-Descriptive-Statistics}}}
+      {Conducted an experiment using a deck of cards.}
+% What: Conducted an experiment using a deck of cards. Sampled and described the data using visualisations and descriptive statistics.
+% When: Dec 2016 ? Jan 2017
+
+    \resumeSubItem{JRail}
+      {Training with \textbf{A} grade; JRail is a railway application with many functionalities. Added concession feature.}
+% When: April 2016
+% Where: Infosys Limited, Mysuru
+% What: JRail, Stream Training Project. Successfully finished training with A grade. JRail is a railway application with various functionalities. Added new features. Learnt Java, Hibernate, JUnit, JSF, Oracle DB. Got introduced to Multitier architecture, Servlet, JSP, JSTL & Ant Build tool. Added a feature by which the Railway Employee could raise a request for train ticket concession and the manager of the employee can approve/reject it.
+
+    \resumeSubItem{PyPedia}
+      {Training with \textbf{A} grade; Users could create, edit, search \& read various topics. Could invite other users too.}
+% What: PyPedia, Generic Training Project. Successfully completed generic training with A grade and finished the project PyPedia. In PyPedia, user could create, edit, search and read about various topics. A user could also invite other users to PyPedia. Improved Python knowledge and got introduced to Oracle Database. Developed the complete login module which focused on signing in of an existing user and registering a new user. Wrote database interactions, various validations and exception handling and stored procedure. Also worked on common module with other team members where we developed the create/edit functionality. Improved Python knowledge and got introduced to Oracle Database.
+% Where: Infosys Limited, Mysuru
+% When: Feb 2016
+% What tech: Python, Oracle Database, Eclipse
+
+    \resumeSubItem{Airline Reservation System website}
+      {PHP training with grade \textbf{A+}; Developed backend. Handled database.}
+% Where: hp Education Services, Noida
+% What did I do: The task was to develop an airline reservation website as the project work for the completion of PHP training. I worked with three other members. Managed team. My role was to develop the backend and handle the database management system.
+% What tech we used: Mentioned above
+% When: Jun 2014-Jul 2014
+
+    \resumeSubItem{OH! HELL}
+      {Minor Project; A Windows 8 store - cards based game, popularly known as 'Lakdi' in India.}
+% Where: ITM, Gwalior
+% What did I do: A Windows 8 store - cards based game, popularly known as 'Lakdi' in India. I conceptualised the game, designed the algorithms and handled database.
+% What tech we used: JSON, MySQL
+% When: Feb 2014-Jun 2014
+
+    \resumeSubItem{Code Combat}
+      {Won the coding competition in college annual function.}
+% What is it: Code Combat, a coding competition in Mar 2013
+% What did I do: Cleared Level 2 in the college annual function-KRONOS 13
+% What tech we used: NA
+
+    \resumeSubItem{BRICKS}
+      {A graphics game in C language which requires user to break all the bricks without losing the ball.}
+% What: A graphics game in C language which requires user to break all the bricks without losing the ball.
+% When: May 2012
+% Where: Home, Gwalior
+  \resumeSubHeadingListEnd
+%
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+%
+%\section{Computer Skills}
+%
+%----------------------------------------------------------------------------------------
+%     POSITION OF RESPONSIBILITIES
+%----------------------------------------------------------------------------------------
+%
+%\section{Participation and Awards}
+%
+% What is it: RHA Volunteering
+% What did I do: Food drives, academy drives and many other special drives
+% WhenL: Member since 15th August 2019; does 2 drives per month on average
+%
+%------------------------------------------------
+%
+% What is it: Startup for Beginners organised by Weekend Ventures in Sept 2014
+% What did I do: Team Leader. Headed the team. Pitched a Startup Idea. Bagged the 1st prize
+% What tech we used: NA
+%
+%------------------------------------------------
+%
+% What is it: HelpAge India
+% What did I do: Raised fund for the HelpAge India event that works nationwide for the cause & care of the elderly. Made special efforts. Presented with cricketers' autographs, badge and a silver medal
+% What tech we used: NA
+%
+%----------------------------------------------------------------------------------------
+%     CO-CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+%
+% What is it: Trainings with score at Infosys Limited from April 2016 to October 2016
+% What did I do: Cloud Foundry Usage & Operations, Journey to cloud Native apps, AngularJS (85%), Node.js (74%), jQuery (85%), Maven and Ant (70%), RESTful Web Services in Java (60%), Spring MVC (100%), Hibernate Framework (98%), SOAP Based Web Services in Java (100%), JUnit, Spring Basics (100%), Data Visualization using Tableau (85%)
+% What tech we used: Mentioned above
+%
+% What is it: C & C++ Training at ITM, Gwalior in July 2013 by hp Education Services
+% What did I do: Attained A grade.
+% What tech we used: Mentioned above
+%
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS 
+%----------------------------------------------------------------------------------------
+%
+%\section{Communication Skills}
+%
+% What is it: Advance Soft Skills Training at ITM, Gwalior from Mar 2014 to Apr 2014 by hp India Sales Pvt. Ltd.
+% What did I do: Gave a team presentation on McDonald's Corporation. Awarded with the Presentation Skills Award. Championed the presentation in the batch. Earned Certificate of Achievement.
+% What tech we used: NA
+%
+%------------------------------------------------
+%
+% What is it: Extempore event at ITM, Gwalior in Sept 2013
+% What did I do: Spoke on Dr. Kiran Bedi. Secured 3rd position
+% What tech we used: NA
+%
+%------------------------------------------------
+%
+% What is it: Business English Certificate Preliminary at ITM, Gwalior in Mar 2013
+% What did I do: Passed with 77% with exceptional listening and reading profile. Earned Cambridge ESOL Entry Level Certificate
+% What tech we used: NA
+%
+%%------------------------------------------------
+%
+% What is it: Essay Competition at K.G. Children Hr. Sec. School, Gwalior in Dec 2008 and Dec 2007
+% What did I do: Wrote essay on Global Warming & Pollution. Secured 1st position both the times
+% What tech we used: NA
+%
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+%
+%\section{Interests and Activities}
+%Fitness freak, Intermediate Cook. Likes to play skill requiring mind games.\\
+%Quick learner. Very much interested in acquiring knowledge.\\
+%Always interested to learn new skills. Special inclination for arts.\\
+%Likes to read variety of topics. Likes to listen to music of all kinds.\\
+%Likes science, technology \& inventions.\\
+%Likes to meddle with computers and electronic gadgets.\\
+%Affinity to astronomy. Loves travelling and exploring new places.\\
+%Supports humanitarian \& developmental activities.
+%
+\end{document}
