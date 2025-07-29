@@ -1,15 +1,7 @@
 % Resume inspired from learnings from: a) Preet Mam from ITM communication skills training, b) Codechef Resume Meme, c) Kaggle Resume Youtube Video
 % ~TODO~ DONE: Make sure the resume respects above three's rules
 %
-% TODO ~DONE~: Add all commented items from resume to online portfolio?
-% TODO ~DONE~: Add all new items from resume to online portfolio?
-% TODO: Add NPTEL Certification Exam with score to online portfolio?
-% TODO: Update RHA, Helpage India work to online portfolio?
-% TODO: Update Hasura work to online portfolio?
-% TODO: Update IMAD and NPTEL work to online portfolio?
-% TODO: Upload KNONOS certificate, HPES, TBC, NPTEL, HASURA certificates to online portfolio?
-%
-% Last updated on: 13th Mov 2019 by Vikas Prasad
+% Last updated on: 13th Nov 2019 by Vikas Prasad
 %-------------------------
 % Resume in Latex
 % Author : Sourabh Bajaj
@@ -67,11 +59,16 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -94,30 +91,260 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Vikas Prasad} & \href{mailto:vikasprasad.prasad@gmail.com}{vikasprasad.prasad@gmail.com}\\
-  GitHub: \href{https://github.com/viiicky}{viiicky}; Stack Overflow: \href{http://stackoverflow.com/users/1781024/vikas-prasad}{1781024} & 91-7566564744 \\
-% - TODO: other links? Khan Academy? Udacity? Codecademy? Mail them to develop a feature where the profile link can be shared and then use that link here?
-% - Once hackerrank profile becomes somewhat presentable add that too
+  LinkedIn: \href{https://www.linkedin.com/in/vikas--prasad/}{\color{blue}vikas--prasad}; GitHub: \href{https://github.com/viiicky}{\color{blue}viiicky}; Stack Overflow: \href{http://stackoverflow.com/users/1781024/vikas-prasad}{\color{blue}1781024} & +91-7566564744 \\
 \end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fyle}{Bengaluru, India \& Remote}
+      \resumeSubSubheading
+        {Engineering Manager 2}{Jan 2022 - Aug 2023}
+        \resumeItemListStart
+          \resumeItem{Executive Coaching}
+            {Received 8 practical sessions of \textbf{1:1} executive coaching from Carpé Diem Learning, learning about time and energy management, \textbf{situational leadership}, \textbf{influencing}, \textbf{executive presence}, \textbf{storytelling}.}
+          \resumeItem{Promotion \& Onboarding}
+            {Successfully promoted \textbf{all 6} team members. Onboarded new engineers, setting them up for success. Turned a report from a risk position to successful state. \textbf{Resolved conflict} between 2 reports.}
+            % Neeraj is the report we turned from risk postion to success state
+          \resumeItem{Fire Brigade}
+            {Ensured \textbf{high morale} \& effectiveness in fire brigade team, achieving \textbf{98.4\%} bug resolution rate.}
+          \resumeItem{Leadership Development Bootcamp}
+            {Completed a bootcamp by ValueHire Consulting Services on \textbf{coaching} \& \textbf{mentoring}, \textbf{feedback}, \textbf{effective communication}, \textbf{time management} \& \textbf{task prioritization}.}
+          \resumeItem{Optimizations}
+            {Improved vendor extraction accuracy by \textbf{9\%}, optimized DE \textbf{docker} images, reduced garbage error messages by over \textbf{96\%}, and enhanced PDF generation with \textbf{95\%} test coverage and reduced setup time.}
+          \resumeItem{Data Extraction Accuracy}
+            {Boosted DE accuracy across multiple fields significantly, with improvements like category in paper receipts from \textbf{14.84\%} to \textbf{67.49\%} and date in digital receipts from \textbf{39.96\%} to \textbf{73.65\%}. \href{https://aws.amazon.com/blogs/startups/how-amazon-textract-helped-fyle-boost-data-extraction-accuracy/}{\textbf{https://aws.amazon.com/blogs/startups/how-amazon-textract-helped-fyle-boost-data-extraction-accuracy/}}}
+          \resumeItem{Cost Reduction and Legacy Cleanup}
+            {Reduced Data Extraction team costs by \textbf{90\%}, \textbf{from USD 8600 to USD 950 per month}, and completely eliminated legacy DE services and repos.}
+            % We improved the accuracy so much that we got rid of transcribers. We had 3 humans hired that were working on it. Once we made our systems confident enough, we got rid of them.
+            % And, how did we improve the accuracy - we moved from custom models to Textract, and then on top of it we wrote our custom layers to further optimize the accuracy, these custom layers could be regex, or other custom logics.
+            % And as part of working on this we had to frequently talk to AWS folks, follow up with them over the email thread, as this feature was yet to be released to everyone, and we were one of the early customers for them.
+
+            % https://stories.fylehq.com/p/how-did-we-increase-data-extraction
+            % like policy this was again a 5 year old service needing overhaul long due
+            % I joined the DE team a year ago as a noob and today I run the show. The things that I take care of now include maintaining the service, building the test infrastructure, analyzing all old services + old test infra deeply and merging all 5+ years of work to a single new service in just a month’s time, sounds awesome right? Of course, it is AWESOME!
+            % Our test infrastructure helped us get the clean and slick stats presented before, having the infra helped us push things confidently to production at insane speeds.
+
+            % https://stories.fylehq.com/p/implementing-good-engineering-practices
+            % For tasks having a big impact on application stability like Python upgrades, linting & formatting the whole codebase at once, refactoring codebase, and critical library upgrades having code coverage of project above acceptable percentage e.g. greater than 90% becomes very helpful. Having code covered gives mental peace to developers and improves confidence while working on big changes. It is somewhat like having insurance, we pay by adding tests, and whenever do big changes these tests pay us back!
+            % Easy POCs/experiments: If good enough code coverage then doing POCs/experiments like library upgrades, python upgrades, and OS distribution changes can be done very easily by validating its compatibility by runnings tests.
+
+            % Expense rules
+            % https://stories.fylehq.com/p/building-expense-rules-a-journey
+        \resumeItemListEnd
+        % Also worked on fying expenses via SMS
+        % Also worked on Expense rules
+
+      \resumeSubSubheading
+        {Engineering Manager 1}{Jan 2021 - Dec 2021}
+        \resumeItemListStart
+          \resumeItem{Leadership Training}
+            {Completed a cohort class, "Become 10x Manager in 4 weeks!" by LeadbySkipTheLine, learning how to do tough conversations, evaluating \& \textbf{elevating} a team, effective \textbf{1:1s}, giving actionable feedback.}
+            % - Onboarding a new engineer (Madhav) who had mostly worked on frontend-tech to data-extraction team successfully and smoothly. Thanks to the guidance from Siva on how to make the life of dev easier. In the beginning I was unsure how would someone with so less experience will be able to pull of the responsibility of handling whole data-extraction, but nevertheless I kept at it and tried to make Madhav successful in owning DE.
+            % - There was a point where Madhav was at quite a low point wrt to DE tests initiative because of the pace of the progress. It took a lot of patience and active listening for me to gather his worries and insecurities and then guide him through pushing out of it successfully.
+            % - Data extraction: Pushed the team to make DEv2 live. It lost steam a bit in the mid, but then we managed, and it ended really well. We had been receiving good feedback from different teams throughout. We were also able to boost up the accuracy for most of the fields.
+            % Apart from the initiative, also coached Madhav on how to better manage tasks, especially bigger initiatives. This showed very good results wrt Madhav having confidence while working on complex projects, as he could see the smaller milestones being achieved and checkmarked slowly.
+            % - Pushed Kirti as deploy folk: Kirti showed interest in deploy related activities. I think this is one of those examples, where I was able to take care of my report in a very timely fashion. The moment he talked about it in our 1x1 - I talked to Gokul, Kartikey and Kirti individually to assess what each of them individually thinks about this idea and Kirti’s capability. Post this, I was able to outline where the gaps are, and what all things were potentially stopping Kirti to reach there. I laid out the plan, got green from all the stakeholders on the plan, shared the common plan with all the stakeholders along with Kirti so that there is visibility, and it all happened right as per the plan.
+            % Over here, of course, the actual work was done by Kirti, what I feel I did better here was, listen to the report’s need actively and then timely taking an action on it along with having a concrete tangible plan.
+            % - Pushed Irfan as a fire brigade member: Irfan has now been in the fire brigade team for more than 2 consecutive months now. This has not only given made his desire of knowing other parts of the codebase possible but has also helped the fire brigade team as anything related to policy(and in some cases, other workflows too), he is able to handle quickly. There is a scope development here possible though - when he is the most experienced person the fire brigade call, he needs to own the show(feedback already given)
+            % - Madhav interview stint: After being reported from Vaishnavi + Kartikey about Madhav's approach to interview, I immediately talked to Madhav and very patiently guided him on how to make an interview-review successful and how to see a candidate. Why I am putting this in the best work question? Because over here, I applied something that I very recently learnt from Siva. Siva recently shared detailed textual feedback for Abhishek Kumar while he was working on it. It takes time to write a detailed explanation out, but I found it quite valuable and I thought going forward I would imply this learning, and when this situation arose, I actually took the time out and whatever I talked to him about, actually wrote down and shared with him to develop this skill that I newly observed from Siva.
+          \resumeItem{Processes \& Documentation}
+            {Created \textbf{Manager’s Readme}: \href{https://billowy-cardamom-348.notion.site/Vikas-Prasad-Fyle-4c5aa13f228142f493cf5d19021f79b8}{\textbf{https://billowy-cardamom-348.notion.site/Vikas-Prasad-Fyle-4c5aa13f228142f493cf5d19021f79b8}}. Ran \textbf{PIP} for 1, did \textbf{career review} \& \textbf{appraisals} for \textbf{9} folks, \& rolled out \textbf{offer letters} to a couple of people.}
+            % - Irfan’s PIP: This was a task where you need to be very disciplined. You cannot miss to send the daily status email at any cost, and you need to review the work on the daily basis. This was the first time I ran the PIP for someone, and it was a good experience overall.
+            % - Appraisals: It was the first time I did review and appraisals. For ~9 folks. Appraisal conversations are definitely one of the toughest conversations I have had, and though it was quite exhausting, I like that it was a challenging task and not something easy. I also am thankful to Siva, for guiding me through it. Without his support, I could not imagine, how would this have gone /\
+            % - Was able to finally set decent engineering practises(with Siva’s support), quality documentation and testing setup(Postman, integration, and backtest) for data-extraction. Onboarded Madhav with the help of these same docs without any issue.
+            % - Rolled out a couple of offer letters to interns. Doesn't really fit in the "best work" question per se. But I am adding it here, because since I did it for the first time, it felt quite good :)
+            % - 1x1: 1x1 was one of the action items that was captured from my survey. I got better at it and was able to do more meaningful 1x1s this quarter. There is still possibility for me for more development here as I recently learned quite a few things about 1x1 from the lead cohort, which I want to try and apply here. But still, it’s better than where it was earlier.
+            % - Manager’s readme: After constant pushes from Siva and Abhishek, I was finally able to push out the [manager’s readme](https://www.notion.so/4c5aa13f228142f493cf5d19021f79b8?pvs=21) for myself. It was taken by all the team members very very positively. Reports are now more aware of my quirks and behaviour and know how to get around them to keep things moving forward. Even outside Fyle(example in the lead cohort), I have gotten very good feedback about the readme, which also made me feel better.
+            % The only thing left here is to try it out with a new team member and see how does it play out there. 
+          \resumeItem{Team Management \& Policy Migration}
+            {Led the policy migration from Python 2 to 3 and established high test coverage as a standard. Successfully created new experts for the policy codebase, distributing the load efficiently.}
+            % - policy migration from python 2 to python 3: This was a gigantic task, and I wrote the whole migration, and I was writing code after a while so all of it was perfect. Only thing, because of my emergency holidays, I was not there went it was being made live, but I am proud of the fact that the team was able to continue and push it through even when I was not around - just like a fault tolerant system. Of course, this was possible because of Kartikey and Siva handling the team in my absence.
+            % - policy tests: Again, I was not around when this was being made live, and unlike the above task, I did not write bigger chunk of it. I laid the foundation and the initial discussions with Kirti and Irfan, specially making them understand the bigger picture for this initiative were interesting. For this particular item, more than me, the credit goes to Kartikey(and Siva) and the team. I am glad that we were able to set up such a high number for test coverage, which basically now works as a gold-standard for other teams.
+            % - policy experts: Again, here I was not very confident how it would turn out, but it all worked out at the end. This is about creating new experts for the policy codebase, and transferring the load from Kartikey to Kirti + Irfan. Both the complex initiative and the team work actually worked out and we are able to successfully create two relatively lesser experience folks as the expert of a such a complex codebase in a matter of just a quarter. This particular item, I am really very amazed and proud about.
+            % - Policy tests blog: Was finally able to push the team and make the blog happen. As this was the first blog from Kirti and Irfan, I had to do a lot of ground-level work. While it required a lot of my time, I am also sure that both of them are in a better position to write out future blogs. In fact, for Kirti I do have this idea(which I am yet to push out to him) of writing a blog on how he ended up being a member of the deploy team - right from he showing interest, doing courses in his free time all the way to gaining the confidence of other deploy team members. I want him to successfully finish this quarter wrt his deploy responsibilities and then talk about it.
+            % Policy tests: In this blog, we share the story of how we added tests support to a 5-year-old micro-service with 4K+ lines of code and 600+ commits. https://stories.fylehq.com/p/from-zero-to-hero-the-policy-tests
+            % "Can we leave it on staging for a week or two, just in case" - we asked nervously.
+            % Before policy tests, there was always this feeling of uncertainty - fear of breaking something. So we would test it rigorously with the help of other devs and leave it on testing environments because we feared the regression. As a result, the code changes didn't take as much time as the testing itself took, leading to delayed policy releases and bug fixes.
+            % 96% code coverage
+            % As a result, the policy code went from the most blamed code (for bugs) to one of the cleanest codes (pre-Diwali cleaning) in Fyle codebase.
+
+          % Others:
+          % - There were a total of 14 items on me for Q1. Out of which 12 were made GA within time. A couple of these were ad-hoc too, but handled with ease.
+
+        % See full self assessment here:
+        % - https://www.notion.so/Quarterly-career-review-75f8f1910b4d42fdbcc00326b5b4be79?pvs=4#ac486b895ebc4e6c8c1c7d3000699bb9
+        % - https://www.notion.so/Quarterly-career-review-75f8f1910b4d42fdbcc00326b5b4be79?pvs=4#f1ee3d2d34cd4e2bbcd7b91ad89b58e9
+        % - https://www.notion.so/Quarterly-career-review-75f8f1910b4d42fdbcc00326b5b4be79?pvs=4#c7a52a96af564191bbb6157ac68375fd
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Senior Member of Technical Staff 2}{Jan 2020 - Dec 2020}
+        \resumeItemListStart
+          \resumeItem{Led multiple teams}
+            {Worked with a total of \textbf{10} folks as direct and skip-level reports for a few quarters.}
+            % Sync up skills: One of the goals I set for myself in Q4 was to improve my sync-up skills.
+            % It was Q3 when I realized the priority of this problem and set up a plan for myself for Q4.
+            % I made sure that both the operational and non-operational sync ups with all the 10 folks I worked in Q4 were being finished and documented.
+            % Till before Q4, I would typically reschedule, or avoid non-operational 1:1s.
+            % I made sure to take down this issue head-on by having documented 1:1 with direct reportees twice a month, and skip level once a month.
+            % What made me realize that this^ was a problem:
+            % There are two things I could recall:
+            %   a) When Adithya was transitioning, and I had to take over policies and data-extraction teams, and I did the initial call with each of the team members from these teams.
+            %   It was Prashant, who mentioned how it’s been quite long that he had non-operational with Adithya, and he had quite a lot to share, like what he was promised, what is his current state, what were his frustrations etc.
+            %   It was then, when it striked me how I also miss my non-operationals quite often, and how this can lead my team members to a similar state as Prashant.
+            %   b) When I was on a call with you, again during around Adithya’s transition, and when I mentioned, that if there is one kind of meeting from my calendars, which I skip or reschedule most, it is non-operational 1x1, and then you mentioned, how this is exact opposite, and it is this meeting that should be prioritised the most and you recommended to do it every week with direct reportees and every other week with skip levels.
+            %   Although, I was convinced by the importance of it by now, I was not confident about the frequency proposed, given that there were a total of 10 folks, I had been working with directly/indirectly last quarter, and thus I adapted it to every two weeks with direct and every 1 month with skip level. This itself was a decent aim for me given my then state.
+          
+            \resumeItem{Customer Interviews \& Team Processes}
+            {Led customer interviews, set up processes for feedback collection, \& implemented practices like Monday commitments \& Friday celebrations to enhance team productivity \& morale.}
+            % Customer interviews: There were a couple of initiatives where I lead the customer interviews. This went very well. Set up a process and template within the team for this.
+            % Prepared for interviews in advance. Did detailed analysis of interview sessions. Documented everything.
+            % And, above all, taught and coached all of these to the team leads working with me, which they are now finding very useful when leading interviews on their own.
+            % As we were doing this for the first time, I first needed to set an example with one or two initiatives so that later others can learn from them, and that is exactly how it went.
+            
+            % Team practices and processes: In Q4, since we moved to the new way of doing things,
+            % and, there were 10 folks I was working with directly or indirectly, by the end of Q3 and beginning of Q4,
+            % I set this internal practice of Monday commitments and Friday celebrations meetings. This is the idea that I got from reading the book Radical Focus.
+            % I thought of giving it a shot, and it was received pretty well.
+            % Every single person whom I talked with, mentioned that Monday planning session is helping them in different ways.
+            % For Friday sessions there was a couple of feedback, which now is being overridden by Aditya's show-off initiative.
+            % Similarly, I got this idea and got it setup where we implemented a quick dynamic AMP email to collect feedback from the customers.
+            % My aim here was twofolds - not just give customers the chance to share fresh feedback, but also any praises directly coming to a public slack channel straight from the customer will give immense gratification feeling to the dev working on it.
+            % Sample from #amp_report_approval: https://fylein.slack.com/archives/C01BKQKRJJF/p1605002130025100
+            % Sample from #fyle_expenses_through_amp_email: https://fylein.slack.com/archives/C01CWFGRWSU/p1610698347003100
+            % On the same lines, I got the equivalent idea setup inside the webapp for #make_budgets_more_powerful in a generic fashion,
+            % as a result of which not only initiatives like #simplify_expense_policy_form or #bring_more_powerful_workflows started using the same component,
+            % but initiatives from others teams like Vashnavi’s also reused the same component to collect fresh feedback from customers :)
+          
+            \resumeItem{Stats-Infra and JAVA PR Guidelines}
+            {Created high-leverage fyle-stats infrastructure, wrote \textbf{Haskell} code for \textbf{postgrest}, and developed exhaustive JAVA PR guidelines to improve \textbf{code quality} and \textbf{review process}.}
+            % Github Issue: https://github.com/PostgREST/postgrest/issues/1573
+            % Haskell Code: https://github.com/viiicky/postgrest/commits/master
+
+            % stats-infra: Wrote `fyle-stats`. I like this because of two reasons:
+            % 1) this is high leverage task. I wrote the infra, and now the complete app is able to show stats on each of the list views or any other place, by writing minimal code/configurations and following a generic contract. This enables people to enable stats support for a given list view within minutes.
+            % 2) As part of this, in order to unblock me, I had to fork `postgrest` and write some code. Interesting part is, this codebase was in Haskell. Had never ever thought that I would ever write anything in Haskell. Had to break my head over understanding pure functional programming, and then write the patch. It was a very interesting challenge.
+            % Link to Github issue and the Haskell code that we wrote, mentioned above.
+            % On top of all this, there is not even a single bug reported in stats-infra from the day it went live. ��
+
+            % JAVA PR guidelines doc: Went through the past 100 PRs, collected the recurring comments people have been receiving.
+            % Then talked to the top reviewers, collected the frequent comments they have been giving.
+            % Added the frequent comments I have been giving.
+            % Compiled all of this together, got reviewed by all the top reviewers, and then finally put the exhaustive doc out followed by a session to the Engineering team.
+            % Post this, many such guidelines doc followed, by different members of Engineering team covering different languages.
+
+          % See full self assessment here: https://www.notion.so/Quarterly-career-review-75f8f1910b4d42fdbcc00326b5b4be79?pvs=4#61c7408ff9df41f8a03f813ab01b1b0a
+        \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Member of Technical Staff}{Jan 2018 - Jan 2020}
+        \resumeItemListStart
+          \resumeItem{Notif \& Reminders}
+            {Led this module, AMP reply to comments feature, email service \& delayed emails feature.}
+            % (4 people team other than me, 2 dev, 1 designer, 1 dev intern)
+
+          \resumeItem{MIS-Analytics}
+            {Led module development, created a large \textbf{Postgres} materialized view for MIS/analytics, improved refresh time by \textbf{100x+}, and designed analytics support using \textbf{Flask} and \textbf{Python}.}
+            % Also, persistent filters
+            % Also, business case and functional requirements: custom reporting
+
+            %---------detailed description-----------
+            % Developed GD service from scratch. Created big fat Postgres materialised view(180+ columns; 30+ joins) for mis and analytics purpose around expenses.
+            % Later, switched to custom refresh mechanism(on normalised tables) bringing refresh time down from 55 mins to 30 sec.
+            % Adapted the same solution for other core objects like reports, payments.
+            % Designed analytics support for various kinds of charts. Designed and led many other subsequent services/features/improvements.
+            % Developed v1: GD service from scratch for MIS
+            % Developed v2: Introduced custom incremental/full refresh mechanism bringing data refresh time from 55 minutes to 30 seconds i.e. 100x+ improvement
+            % Designed v3: Analytics support
+            % Led(either no design by me or just requirements by me) other similar services: mis-reports, mis-payments. Also subsequent new features like new charts, frequently used filters on Analytics page, full refresh overhaul using time based approach.
+            % (2 people team other than me, both dev)
+            % Designed and lead other various subsequent features: Attachments urls in company expenses export
+
+            %---------gold-digger related facts----------
+            % fact table for gold-digger: transactions
+            % fat table: gold_digger_schema.transaction_collections
+            % no. of transactions = 2171988
+            % size of transactions table = 4665 MB
+            % size of gold_digger_schema.transaction_collections = 8311 MB
+            % number of columns in gold_digger_schema.transaction_collections = 183
+            % number of joins for gold_digger_schema.transaction_collections table definition = 34
+            % helpful blog to get the whole picture(we are not the author): https://stories.fylehq.com/p/analytics-pipeline-using-incremental
+            % Common approach to analytics is to have a set of normalised tables and load data from core /fast-moving (source) tables to these separate views/table definitions (destination) -  optimised for running complex analytical queries
+            
+          \resumeItem{Jobs Infrastructure}
+            {\href{https://stories.fylehq.com/p/engineering-guide-to-food-trucks}{\textbf{https://stories.fylehq.com/p/engineering-guide-to-food-trucks}} End to end development of a background job processing framework. Used \textbf{APScheduler}, \textbf{RabbitMQ}, \textbf{Celery}.}
+            % End-to-end means, not only development, but pre and post dev stuff also, like: business requirements, functional requirements, engineering design, dev+documentation+testing+demo+maintenance etc.
+            % Learnt really a good loads of things from this project. Got many myths busted :)
+
+            % Other items:
+            % - Extended existing service to support any new integration in a generic fashion. Added Netsuite, SunGL and GEFU integration using this generic support.
+            % Added support for \textbf{QBO} locations \& classes. Even worked on JavaScript. Constantly \textbf{maintained} and \textbf{supported} one top QBO using customer.
+            % developed the above thing
+            % Also did: UI work here
+            % constantly maintained and supported the UK client FAE
+            % - {Led \& developed various features/services, enforced \textbf{good practices}, \& contributed to engineering \textbf{hiring} (9 to 90 employees in 2 years). Also involved in \textbf{production deployments} \& \textbf{customer success} for bugs.}
+            % Also enforced \textbf{good practices} and \textbf{initiatives} like using editorconfig, BugsNPizza etc.
+            % Was also actively involved in engineering \textbf{hiring}(seen the company grow from 9 to 90 members in around 2 years), and briefly involved in handling \textbf{production deployments} and \textbf{customer success} on bugs front.}
+            % - developed end to end Default Cost Center Support for both web app and mobile
+            % - developed end to end Default Cost Center Support bulk edition;
+            % - developed end to end Allowed per diem features
+            % - developed and documented Bulk invite API for Hero's Adrenaline software (temporary solution till TPA support was being created)
+            % - wrote Hero specific MIS scripts
+            % - developed Auto generate unique sequential payment numbers at org level
+            % - developed JwtPrincipal support for including roles, scopes, added_by etc.
+            % - led defaults-handler
+        \resumeItemListEnd
+% What is Fyle: Intelligent Expense Management Software. a new standard for expense management that provides one click expense tracking for employees and unmatched control for enterprises.
+% Tech stack at Fyle: main service in Java with Dropwizard framework. Almost all others services in Python with Flask framework. Every now and then people keep trying different tech like Ruby, Django etc. etc.
+% Some other tech stack: jdbi, Postgres, rabbitMQ, Angular, ionic framework. Google Guice for dependency injection in Java and Liquibase for migrations in Java, Alembic for migrations in Python.
+% Joined as the 9th employee on 2018 New Year, and as of writing we have 90 employees - in a span of almost 2 years, and still hiring.
+
+    \resumeSubheading
+      {Infosys Limited}{Mysuru \& Bengaluru, India}
+      \resumeSubSubheading
+        {Systems Engineer}{Dec 2015 - Dec 2017}
+        \resumeItemListStart
+          \resumeItem{Connected Car Platform}
+            {Developed Notification and Vehicle Locator services using \textbf{Spring}, \textbf{Java}, \textbf{mongoDB}, and \textbf{AWS}.}
+  % What: Developed Notification and Vehicle Locator service from scratch. Worked on Spring Boot, Spring Data, Java, JUnit, Maven, git, mongoDB. Got introduced to mockito, REST-assured, Java 8 features: Instant, Lambda, Supplier, Optional, reflections, Design Patterns: Factory, State, Singleton, Builder, Jackson, Batch Processing, Spring Scheduler, Spring State Machine, Spring JMS Listener, Spring Integration, Azure Service Bus, Qpid, sonarQube, twilio, SendGrid, amazon web services: Amazon SES, Amazon SNS, RequestBin, ngrok, JFrog, Jenkins, VSTS, semaphoreci, kibana. Got introduced to processes like: Agile, TDD, Pair Programming.
+  % Author tag on spring-library :) https://github.com/spring-projects/spring-integration/commit/74b59ef8d3d157c7d19e7937314812fc5a9c15e6
+
+          \resumeItem{Digital Oil Field}
+            {Worked on UI for managing oil fields digitally, adding functionality for custom plots and separator views.}
+  % What: UI App Full Stack Developer, Mssql, AngularJS, Node.js � DOF is an application which collects data through various sensors placed in oil field and then after filtering those data, provides interactive dashboard to the user where user can:
+  % - monitor the activities of oil wells, various equipment like separators, pump etc.
+  % - close alarms raised by any equipment.
+  % - plot various graphs between different parameters to see the production details
+  % - forecast productions, etc.
+  %
+  % Phase 1 of the application was already developed. Data was being taken from Pi Historian. Middleware was written in C# & MSSQL was used as the database. UI app was written using AngularJS JavaScript framework. And Node.js was used as the backend of the UI app. Worked on the UI app for Phase 2. Added functionality for saving custom plots. Added views for separators along with various other fixes. Improved AngularJS, Bootstrap & Node.js knowledge. Got introduced to D3, NVD3, MSSQL & Leaflet
+  % Where: ICETS, Infosys, BLR
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Free and Open Source Software for Education (FOSSEE), IIT Bombay}{Remote}
+      \resumeSubSubheading
+        {Intern}{April 2015 - May 2015}
+        \resumeItemListStart
+          \resumeItem{Textbook Companion Programme}
+            {\href{http://tbc-python.fossee.in/book-details/502/}{\textbf{http://tbc-python.fossee.in/book-details/502/}} Contributed to creating reference material for the book \textbf{Data Structures} \& \textbf{Algorithms Analysis}. Received honorarium.}
+        \resumeItemListEnd
+% What: Textbook Companion Programme by IIT Bombay on Internet
+% What did I do: Submitted Python code for all the solved examples of the book Sams Teach Yourself Data Structures & Algorithms Analysis in 24 Hours; FOSSEE (Free and Open Source Software for Education); Contributed in creating a repository of reference material. Received honorarium. Strengthened Python, Object Oriented and Data Structures Algorithms Analysis skills. Complete project on above link.
+% When: April 2015 - May 2015
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Institute of Technology and Management (ITM)}{Gwalior, India}
-      {Bachelor of Engineering in Computer Science;  CGPA:  \textbf{7.63}/10.00}{2011 - 2015}
-      \resumeItemListStart
-        \resumeItemMinimal{1\textsuperscript{st} Division with  \textbf{Honours}}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {K.G. Children Higher Secondary School}{Gwalior, India}
-      {Physics, Chemistry \& Maths;   \textbf{84.6}\%}{2011}
-      \resumeItemListStart
-        \resumeItemMinimal{ \textbf{1}\textsuperscript{st} Division}
-        \resumeItemMinimal{ \textbf{Distinction} \textit{in all subjects except one}}
-        \resumeItemMinimal{Selected for Central Sector  \textbf{Scholarship}}
-      \resumeItemListEnd
+      {Institute of Technology and Management}{Gwalior, India}
+      \resumeSubSubheading
+      {Bachelor of Engineering in \textbf{Computer Science}; CGPA: \textbf{7.63}/10.00; 1\textsuperscript{st} Division with \textbf{Honours}}{2011 - 2015}
       
 % What is it: High School at K.G. Children Hr. Sec. School, Gwalior by Board of Secondary Education, Madhya Pradesh in 2009
 % What did I do: Passed in 1st Division with 88%. Distinction in all subjects
@@ -125,258 +352,4 @@
 %------------------------------------------
   \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Line limit for each description in this section = 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Currently Fyle->MIS-Analytics, Fyle-Accounting-Exports and Fyle->Others are breaking this limit(allowing since the resume is not exceeding the max 1 page limit, might want to reduce in future).
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Fyle}{Bengaluru, India}
-      {Member of Technical Staff}{Jan 2018 - Present}
-      \resumeItemListStart
-      
-        \resumeItem{Notifications \& Reminders}
-          {Led this module. Led AMP reply to comments feature, email service and delayed emails feature.}
-% (4 people team other than me, 2 dev, 1 designer, 1 dev intern)
-% TODO: add activity stream in above description once it sees the light
-
-        \resumeItem{MIS-Analytics}
-          {Led this module. Developed GD service from scratch. Created big fat \textbf{Postgres} materialised view(\textbf{180+} columns; \textbf{30+} joins) for mis and analytics purpose around expenses. Later, switched to custom refresh mechanism(on normalised tables) bringing refresh time down from \textbf{55 mins to 30 sec}; \textbf{100x+} improvement. Adapted the same solution for other core objects like reports, payments. Designed analytics support for various kinds of charts. Designed and led many other subsequent services/features/improvements. Used \textbf{Flask}, \textbf{Python}.}
-% TODO: add persistent filters in above description once it sees the light
-% TODO: new item: business case and functional requirements: custom reporting
-
-%---------detailed description-----------
-% Developed v1: GD service from scratch for MIS
-% Developed v2: Introduced custom incremental/full refresh mechanism bringing data refresh time from 55 minutes to 30 seconds i.e. 100x+ improvement
-% Designed v3: Analytics support
-% Led(either no design by me or just requirements by me) other similar services: mis-reports, mis-payments. Also subsequent new features like new charts, frequently used filters on Analytics page, full refresh overhaul using time based approach.
-% (2 people team other than me, both dev)
-% Designed and lead other various subsequent features: Attachments urls in company expenses export
-
-%---------gold-digger related facts----------
-% fact table for gold-digger: transactions
-% fat table: gold_digger_schema.transaction_collections
-% no. of transactions = 2171988
-% size of transactions table = 4665 MB
-% size of gold_digger_schema.transaction_collections = 8311 MB
-% number of columns in gold_digger_schema.transaction_collections = 183
-% number of joins for gold_digger_schema.transaction_collections table definition = 34
-% helpful blog to get the whole picture(we are not the author): https://engineering.fylehq.com/analytics-pipeline-using-incremental-refresh-at-fyle/
-% Common approach to analytics is to have a set of normalised tables and load data from core /fast-moving (source) tables to these separate views/table definitions (destination) -  optimised for running complex analytical queries
-
-      	\resumeItem{Jobs Infrastructure}
-          {\href{https://engineering.fylehq.com/engineering-guide-to-food-truck/}{\textbf{https://engineering.fylehq.com/engineering-guide-to-food-truck/}} End to end development of a background job processing framework. Used \textbf{APScheduler}, \textbf{RabbitMQ}, \textbf{Celery}.}
-% End to End means, not only development, but pre and post dev stuff also, like: business requirements, functional requirements, engineering design, dev+documentation+testing+demo+maintenance etc.
-% Learnt really a good loads of things from this project. Got many myths busted :)
-
-        \resumeItem{Accounting Exports}
-          {Extended existing service to support any new integration in a generic fashion. Added Netsuite, SunGL and GEFU integration using this generic support. Added support for \textbf{QBO} locations \& classes. Even worked on JavaScript. Constantly \textbf{maintained} and \textbf{supported} one top QBO using customer.}
-% developed the above thing
-% Also did: UI work here
-% constantly maintained and supported the UK client FAE
-
-        \resumeItem{Others}
-          {Apart from above, led and developed many other features/services. Also enforced \textbf{good practices} and \textbf{initiatives} like using editorconfig, BugsNPizza etc. Was also actively involved in engineering \textbf{hiring}(seen the company grow from 9 to 90 members in around 2 years), and briefly involved in handling \textbf{production deployments} and \textbf{customer success} on bugs front.}
-      \resumeItemListEnd
-% Other items:
-% - developed end to end Default Cost Center Support for both web app and mobile
-% - developed end to end Default Cost Center Support bulk edition;
-% - developed end to end Allowed per diem features
-% - developed  and documented Bulk invite API for Hero's Adrenaline software (temporary solution till TPA support was being created)
-% - wrote Hero specific MIS scripts
-% - developed Auto generate unique sequential payment numbers at org level
-% - developed JwtPrincipal support for include roles, scopes, added_by etc.
-% - led defaults-handler
-
-% What is Fyle: Intelligent Expense Management Software. a new standard for expense management that provides one click expense tracking for employees and unmatched control for enterprises.
-% Tech stack at Fyle: main service in Java with Dropwizard framework. Almost all others services in Python with Flask framework. Every now and then people keep trying different tech like Ruby, Django etc. etc.
-% Some other tech stack: jdbi, Postgres, rabbitMQ, Angular, ionic framework. Google Guice for dependency injection and Liquibase for migrations.
-% Joined as the 9th employee on 2018 New Year, and as of writing we have 90 employees - in a span of almost 2 years, and still hiring.
-
-    \resumeSubheading
-      {Infosys Limited}{Mysuru \& Bengaluru, India}
-      {Systems Engineer}{Dec 2015 - Dec 2017}
-      \resumeItemListStart
-        \resumeItem{Connected Car Platform (CCP)}
-          {Developed \textbf{Notification} and \textbf{Vehicle Locator} services from scratch. Used \textbf{Spring}, \textbf{Java}, \textbf{mongoDB}, \textbf{twilio}, \textbf{SendGrid}, amazon web services: \textbf{Amazon SES}, \textbf{Amazon SNS}.}
-% What: Developed Notification and Vehicle Locator service from scratch. Worked on Spring Boot, Spring Data, Java, JUnit, Maven, git, mongoDB. Got introduced to mockito, REST-assured, Java 8 features: Instant, Lambda, Supplier, Optional, reflections, Design Patterns: Factory, State, Singleton, Builder, Jackson, Batch Processing, Spring Scheduler, Spring State Machine, Spring JMS Listener, Spring Integration, Azure Service Bus, Qpid, sonarQube, twilio, SendGrid, amazon web services: Amazon SES, Amazon SNS, RequestBin, ngrok, JFrog, Jenkins, VSTS, semaphoreci, kibana. Got introduced to processes like: Agile, TDD, Pair Programming
-
-        \resumeItem{Digital Oil Field (DOF) Phase 2}
-          {Worked on UI of a POC that allows users to manage Oil Fields digitally under
-the Internet of Things \textbf{R\&D} team. Added functionality for saving custom plots. Added separator views.}
-% What: UI App Full Stack Developer, Mssql, AngularJS, Node.js � DOF is an application which collects data through various sensors placed in oil field and then after filtering those data, provides interactive dashboard to the user where user can:
-% - monitor the activities of oil wells, various equipment like separators, pump etc.
-% - close alarms raised by any equipment.
-% - plot various graphs between different parameters to see the production details
-% -forecast productions, etc.
-%
-% Phase 1 of the application was already developed. Data was being taken from Pi Historian. Middleware was written in C# & MSSQL was used as the database. UI app was written using AngularJS JavaScript framework. And Node.js was used as the backend of the UI app. Worked on the UI app for Phase 2. Added functionality for saving custom plots. Added views for separators along with various other fixes. Improved AngularJS, Bootstrap & Node.js knowledge. Got introduced to D3, NVD3, MSSQL & Leaflet
-% Where: ICETS, Infosys, BLR
-
-       \resumeItem{Telstra Mock Project}
-          {Developed telecommunication website with user/admin functionalities and pdf bill reports support. Used Spring, Java, H2 database for \textbf{RESTful} APIs. AngularJS, Bootstrap, Google Charts for frontend.}
-% What did I do: Mock project to develop telecommunication user/admin functionalities. Wrote backend in Java using Spring Boot. Used H2 database. Used Spring Data JPA for data repositories. Exposed RESTful APIs for the frontend. Used Apache PDFBox for creating bill reports. Developed the frontend using AngularJS. Used Bootstrap for CSS part. Used UI Bootstrap, an angular directive for bootstrap components. Used Google Charts for graph creation. Learnt about Spring, AngularJS, RESTful services, Bootstrap and JavaScript.
-% When: July 2016
-        \resumeItemListEnd
-
-    \resumeSubheading
-      {Free and Open Source Software for Education (FOSSEE), IIT Bombay}{Internet}
-      {Intern}{April 2015 - May 2015}
-      \resumeItemListStart
-        \resumeItem{Textbook Companion Programme}
-          {\href{http://tbc-python.fossee.in/book-details/502/}{\textbf{http://tbc-python.fossee.in/book-details/502/}} Contributed in creating reference material for the book \textbf{Data Structures} \& \textbf{Algorithms Analysis}. Received honorarium.}
-      \resumeItemListEnd
-% What: Textbook Companion Programme by IIT Bombay on Internet
-% What did I do: Submitted Python code for all the solved examples of the book Sams Teach Yourself Data Structures & Algorithms Analysis in 24 Hours; FOSSEE (Free and Open Source Software for Education); Contributed in creating a repository of reference material. Received honorarium. Strengthened Python, Object Oriented and Data Structures Algorithms Analysis skills. Complete project on above link.
-% When: April 2015 - May 2015
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Line limit for each description in this section = 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Currently none breaks this limit.
-
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://platform.hasura.io/hub/projects/viaksprasad/zapier-backup}{\textbf{https://platform.hasura.io/hub/projects/viaksprasad/zapier-backup}}}
-      {Upload to Hasura with Drive backup.}
-% What: A project that allows user to upload any files to Hasura and backup the same file on Google Drive. Zapier backup is used to upload your files to Hausra server and trigger a backup for the same file on Google Drive. The drive link where all the backups get saved is: https://drive.google.com/open?id=1pYSTjW7pooVf3_kUXm_vj-cZVAVt9JSb More details in the above link.
-% When: Jan 2018 ? Mar 2018
-    
-% https://github.com/viiicky/imad-app
-% Some kid project by IMAD course that uses nodejs, after which we took the NPTEL certification. The project is too kid to include.
-% When: Aug 2017
-      
-    \resumeSubItem{\href{https://github.com/viiicky/Intro-to-Inferential-Statistics}{\textbf{https://github.com/viiicky/Intro-to-Inferential-Statistics}}}
-      {Detailed analysis on Haberman's Survival Data Set.}
-% What: Did a detailed analysis on the dataset containing cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer. More details in the link.
-% When: Jan 2017
-
-    \resumeSubItem{\href{https://github.com/viiicky/Intro-to-Descriptive-Statistics}{\textbf{https://github.com/viiicky/Intro-to-Descriptive-Statistics}}}
-      {Conducted an experiment using a deck of cards.}
-% What: Conducted an experiment using a deck of cards. Sampled and described the data using visualisations and descriptive statistics.
-% When: Dec 2016 ? Jan 2017
-
-    \resumeSubItem{JRail}
-      {Training with \textbf{A} grade; JRail is a railway application with many functionalities. Added concession feature.}
-% When: April 2016
-% Where: Infosys Limited, Mysuru
-% What: JRail, Stream Training Project. Successfully finished training with A grade. JRail is a railway application with various functionalities. Added new features. Learnt Java, Hibernate, JUnit, JSF, Oracle DB. Got introduced to Multitier architecture, Servlet, JSP, JSTL & Ant Build tool. Added a feature by which the Railway Employee could raise a request for train ticket concession and the manager of the employee can approve/reject it.
-
-    \resumeSubItem{PyPedia}
-      {Training with \textbf{A} grade; Users could create, edit, search \& read various topics. Could invite other users too.}
-% What: PyPedia, Generic Training Project. Successfully completed generic training with A grade and finished the project PyPedia. In PyPedia, user could create, edit, search and read about various topics. A user could also invite other users to PyPedia. Improved Python knowledge and got introduced to Oracle Database. Developed the complete login module which focused on signing in of an existing user and registering a new user. Wrote database interactions, various validations and exception handling and stored procedure. Also worked on common module with other team members where we developed the create/edit functionality. Improved Python knowledge and got introduced to Oracle Database.
-% Where: Infosys Limited, Mysuru
-% When: Feb 2016
-% What tech: Python, Oracle Database, Eclipse
-
-    \resumeSubItem{Airline Reservation System website}
-      {PHP training with grade \textbf{A+}; Developed backend. Handled database.}
-% Where: hp Education Services, Noida
-% What did I do: The task was to develop an airline reservation website as the project work for the completion of PHP training. I worked with three other members. Managed team. My role was to develop the backend and handle the database management system.
-% What tech we used: Mentioned above
-% When: Jun 2014-Jul 2014
-
-    \resumeSubItem{OH! HELL}
-      {Minor Project; A Windows 8 store - cards based game, popularly known as 'Lakdi' in India.}
-% Where: ITM, Gwalior
-% What did I do: A Windows 8 store - cards based game, popularly known as 'Lakdi' in India. I conceptualised the game, designed the algorithms and handled database.
-% What tech we used: JSON, MySQL
-% When: Feb 2014-Jun 2014
-
-    \resumeSubItem{Code Combat}
-      {Won the coding competition in college annual function.}
-% What is it: Code Combat, a coding competition in Mar 2013
-% What did I do: Cleared Level 2 in the college annual function-KRONOS 13
-% What tech we used: NA
-
-    \resumeSubItem{BRICKS}
-      {A graphics game in C language which requires user to break all the bricks without losing the ball.}
-% What: A graphics game in C language which requires user to break all the bricks without losing the ball.
-% When: May 2012
-% Where: Home, Gwalior
-  \resumeSubHeadingListEnd
-%
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
-%----------------------------------------------------------------------------------------
-%
-%\section{Computer Skills}
-%
-%----------------------------------------------------------------------------------------
-%     POSITION OF RESPONSIBILITIES
-%----------------------------------------------------------------------------------------
-%
-%\section{Participation and Awards}
-%
-% What is it: RHA Volunteering
-% What did I do: Food drives, academy drives and many other special drives
-% WhenL: Member since 15th August 2019; does 2 drives per month on average
-%
-%------------------------------------------------
-%
-% What is it: Startup for Beginners organised by Weekend Ventures in Sept 2014
-% What did I do: Team Leader. Headed the team. Pitched a Startup Idea. Bagged the 1st prize
-% What tech we used: NA
-%
-%------------------------------------------------
-%
-% What is it: HelpAge India
-% What did I do: Raised fund for the HelpAge India event that works nationwide for the cause & care of the elderly. Made special efforts. Presented with cricketers' autographs, badge and a silver medal
-% What tech we used: NA
-%
-%----------------------------------------------------------------------------------------
-%     CO-CURRICULAR ACTIVITIES
-%----------------------------------------------------------------------------------------
-%
-% What is it: Trainings with score at Infosys Limited from April 2016 to October 2016
-% What did I do: Cloud Foundry Usage & Operations, Journey to cloud Native apps, AngularJS (85%), Node.js (74%), jQuery (85%), Maven and Ant (70%), RESTful Web Services in Java (60%), Spring MVC (100%), Hibernate Framework (98%), SOAP Based Web Services in Java (100%), JUnit, Spring Basics (100%), Data Visualization using Tableau (85%)
-% What tech we used: Mentioned above
-%
-% What is it: C & C++ Training at ITM, Gwalior in July 2013 by hp Education Services
-% What did I do: Attained A grade.
-% What tech we used: Mentioned above
-%
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS 
-%----------------------------------------------------------------------------------------
-%
-%\section{Communication Skills}
-%
-% What is it: Advance Soft Skills Training at ITM, Gwalior from Mar 2014 to Apr 2014 by hp India Sales Pvt. Ltd.
-% What did I do: Gave a team presentation on McDonald's Corporation. Awarded with the Presentation Skills Award. Championed the presentation in the batch. Earned Certificate of Achievement.
-% What tech we used: NA
-%
-%------------------------------------------------
-%
-% What is it: Extempore event at ITM, Gwalior in Sept 2013
-% What did I do: Spoke on Dr. Kiran Bedi. Secured 3rd position
-% What tech we used: NA
-%
-%------------------------------------------------
-%
-% What is it: Business English Certificate Preliminary at ITM, Gwalior in Mar 2013
-% What did I do: Passed with 77% with exceptional listening and reading profile. Earned Cambridge ESOL Entry Level Certificate
-% What tech we used: NA
-%
-%%------------------------------------------------
-%
-% What is it: Essay Competition at K.G. Children Hr. Sec. School, Gwalior in Dec 2008 and Dec 2007
-% What did I do: Wrote essay on Global Warming & Pollution. Secured 1st position both the times
-% What tech we used: NA
-%
-%----------------------------------------------------------------------------------------
-%	INTERESTS AND ACTIVITIES
-%----------------------------------------------------------------------------------------
-%
-%\section{Interests and Activities}
-%Fitness freak, Intermediate Cook. Likes to play skill requiring mind games.\\
-%Quick learner. Very much interested in acquiring knowledge.\\
-%Always interested to learn new skills. Special inclination for arts.\\
-%Likes to read variety of topics. Likes to listen to music of all kinds.\\
-%Likes science, technology \& inventions.\\
-%Likes to meddle with computers and electronic gadgets.\\
-%Affinity to astronomy. Loves travelling and exploring new places.\\
-%Supports humanitarian \& developmental activities.
-%
 \end{document}
