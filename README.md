@@ -2,4 +2,4 @@
 This repo contains the .tex file for the resume
 
 ### Preview
-![Resume Screenshot](/resume_v04.png)
+![Resume Screenshot](/resume_v05.png)
